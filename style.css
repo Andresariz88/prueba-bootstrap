@@ -39,8 +39,26 @@ h1 {
   font-family: 'Nunito', sans-serif;
 }
 
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
 .seccion-texto {
   font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
 }
 
 
@@ -121,11 +139,80 @@ h1 {
 }
 
 .badge {
-  margin: 5px;
+  margin: 1px;
+}
+
+
+/* Proyectos */
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 10px 10px 25px rgb(46, 46, 46);
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  /*display: flex;*/
+}
+
+.overlay i {
+  color: black;
+  font-size: 25px;
+  margin: 2px;
+
 }
 
 
 /* Adaptable (responsive) */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  } 
+
+  .overlay i {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
