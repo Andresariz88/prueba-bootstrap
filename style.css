@@ -48,10 +48,10 @@ h1 {
   font-size: 1.2rem;
 }
 
-.btn-info {
+.btn-primary {
   font-size: 1.1rem;
   margin: 20px;
-  color: rgb(58, 58, 58);
+  color: rgb(255, 255, 255);
 }
 
 .texto-negro {
@@ -256,6 +256,59 @@ h1 {
   font-size: 0.9rem;
   color: #656060;
 }
+
+
+/* Contacto */
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -6rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
 
 /* Adaptable (responsive) */
 
